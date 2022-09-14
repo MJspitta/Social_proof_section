@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-left {
+  width: 40%;
+  margin: 0 4rem 2rem 0;
+}
+
+.top-left h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: hsl(300, 43%, 22%);
+}
+
+.top-left p {
+  font-weight: 500;
+  line-height: 1.2;
+  color: hsl(303, 10%, 53%);
+}
+
+.top-right {
+  width: 50%;
+  padding-top: 1.5rem;
+}
+
+.rating {
+  width: 80%;
+  background-color: hsl(300, 24%, 96%);
+  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.stars {
+  display: flex;
+}
+
+.rating img {
+  margin: 0 0.2rem;
+}
+
+.rat2 {
+  margin-left: 2rem;
+}
+
+.rat3 {
+  margin-left: 4rem;
+}
+
+.rating p {
+  margin-left: 2rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-content {
+  width: 30%;
+  height: 13rem;
+  padding: 1.5rem 1rem;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+}
+
+.top-content img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.user {
+  margin-left: 2rem;
+}
+
+.user h4 {
+  font-weight: 700;
+}
+
+.user p {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.bottom-content {
+  margin-top: 1rem;
+}
+
+.bottom-content p {
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.content2 {
+  margin-top: 1rem;
+}
+
+.content3 {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 375px) {
+  * {
+    transition: ease 0.5s;
+  }
+
+  main {
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .top {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .top-left {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .top-right {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .rating {
+    width: 100%;
+    margin 0 auto 2rem;
+    flex-direction: column;
+  }
+
+  .rating p {
+    margin: 0;
+  }
+
+  .stars {
+    margin-top: 0.5rem;
+  }
+
+  .rating p {
+    margin-top: 1rem;
+  }
+
+  .rat1, .rat2, .rat3 {
+    margin: 0 0 1rem;
+
+  }
+
+  .bottom {
+    flex-direction: column;
+    width: 90%;
+    margin: 2rem auto 4rem;
+  }
+
+  .user-content {
+    width: 100%;
+
+  }
+}
